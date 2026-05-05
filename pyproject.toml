@@ -1,0 +1,34 @@
+[project]
+name = "ai-cv"
+version = "0.1.0"
+description = "AI-powered CV/resume scoring system with profession-specific rubrics"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.0",
+    "pyyaml>=6.0",
+    "pymupdf>=1.24",
+    "python-docx>=1.1",
+    "httpx>=0.27",
+    "rich>=13.0",
+    "typer>=0.12",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+ai-cv = "ai_cv.cli:app"
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra"

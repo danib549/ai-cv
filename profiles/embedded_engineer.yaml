@@ -1,0 +1,553 @@
+profession: "Embedded Systems Engineer"
+version: "1.0"
+total_points: 100.0
+description: >
+  Scoring rubric for embedded systems engineers. Evaluates firmware/hardware
+  skills, RTOS knowledge, debugging capability, and domain experience.
+  Each category has weighted sub-skills. Red flags apply penalties after scoring.
+
+categories:
+  - name: "Core Technical Skills"
+    max_points: 40
+    description: "Non-negotiable technical foundations. Absence at mid+ level is a major concern."
+    skills:
+      - name: "Programming Languages"
+        max_points: 15
+        description: >
+          C is critical (score 0 if absent). C++ for larger projects.
+          Assembly reading ability. Python for scripting/tooling. Rust as emerging bonus.
+        keywords:
+          - "C"
+          - "C++"
+          - "assembly"
+          - "ARM assembly"
+          - "Python"
+          - "Rust"
+          - "embedded C"
+          - "bit manipulation"
+          - "pointers"
+          - "volatile"
+          - "const correctness"
+
+      - name: "Microcontroller Families"
+        max_points: 8
+        description: >
+          ARM Cortex-M is dominant (STM32, NXP, Nordic nRF). RISC-V growing.
+          ESP32 for IoT. Depth in at least one family + breadth across others.
+        keywords:
+          - "ARM Cortex-M"
+          - "Cortex-M0"
+          - "Cortex-M3"
+          - "Cortex-M4"
+          - "Cortex-M7"
+          - "Cortex-M33"
+          - "Cortex-A"
+          - "STM32"
+          - "NXP"
+          - "Nordic nRF"
+          - "nRF52"
+          - "nRF53"
+          - "RISC-V"
+          - "ESP32"
+          - "AVR"
+          - "PIC"
+          - "TI MSP430"
+          - "Renesas"
+          - "i.MX"
+
+      - name: "RTOS Knowledge"
+        max_points: 7
+        description: >
+          FreeRTOS is must-know. Zephyr rapidly growing. ThreadX/VxWorks/QNX for
+          enterprise/safety. Key concepts: task scheduling, mutexes, semaphores,
+          priority inversion, message queues, tick-less idle.
+        keywords:
+          - "FreeRTOS"
+          - "Zephyr"
+          - "ThreadX"
+          - "Azure RTOS"
+          - "VxWorks"
+          - "QNX"
+          - "RTOS"
+          - "task scheduling"
+          - "mutex"
+          - "semaphore"
+          - "priority inversion"
+          - "message queue"
+          - "real-time operating system"
+          - "Mbed OS"
+          - "SafeRTOS"
+
+      - name: "Bare-Metal Programming"
+        max_points: 3
+        description: >
+          Direct register manipulation, startup code, linker scripts, BSP development.
+          Candidates who only know HAL abstractions lack depth.
+        keywords:
+          - "bare-metal"
+          - "bare metal"
+          - "register"
+          - "linker script"
+          - "startup code"
+          - "BSP"
+          - "board support package"
+          - "CMSIS"
+          - "HAL"
+          - "memory-mapped I/O"
+
+      - name: "Hardware Interfaces"
+        max_points: 4
+        description: >
+          I2C/SPI/UART are must-have. CAN/USB/Ethernet are high value.
+          PCIe, MIPI, QSPI are specialized bonuses.
+        keywords:
+          - "I2C"
+          - "SPI"
+          - "UART"
+          - "CAN"
+          - "CAN-FD"
+          - "USB"
+          - "Ethernet"
+          - "PCIe"
+          - "MIPI"
+          - "SDIO"
+          - "QSPI"
+          - "RS-485"
+          - "RS-232"
+          - "Modbus"
+          - "EtherCAT"
+          - "PROFINET"
+          - "LIN"
+
+      - name: "Memory Management"
+        max_points: 2
+        description: >
+          Stack vs heap, static allocation, DMA config, MPU/MMU setup,
+          cache coherency, linker script customization.
+        keywords:
+          - "DMA"
+          - "MPU"
+          - "MMU"
+          - "stack"
+          - "heap"
+          - "memory pool"
+          - "static allocation"
+          - "cache coherency"
+          - "memory-mapped"
+
+      - name: "Interrupts & Real-Time"
+        max_points: 1
+        description: >
+          NVIC configuration, ISR design, interrupt latency, deterministic timing,
+          watchdog timers, hard vs soft real-time.
+        keywords:
+          - "interrupt"
+          - "ISR"
+          - "NVIC"
+          - "watchdog"
+          - "real-time"
+          - "deterministic"
+          - "latency"
+          - "timer"
+
+  - name: "Secondary Technical Skills"
+    max_points: 25
+    description: "Important supporting skills that separate good from great engineers."
+    skills:
+      - name: "Debugging Tools & Methodology"
+        max_points: 5
+        description: >
+          JTAG/SWD probes, logic analyzers, oscilloscopes, GDB remote,
+          Segger J-Link, serial wire viewer, systematic methodology.
+        keywords:
+          - "JTAG"
+          - "SWD"
+          - "logic analyzer"
+          - "oscilloscope"
+          - "GDB"
+          - "J-Link"
+          - "ST-Link"
+          - "probe-rs"
+          - "SWV"
+          - "ITM"
+          - "Saleae"
+          - "Segger"
+
+      - name: "PCB & Schematic Familiarity"
+        max_points: 3
+        description: >
+          Read schematics, understand reference designators, review pin assignments,
+          participate in design reviews, bring up prototype boards.
+        keywords:
+          - "schematic"
+          - "PCB"
+          - "KiCad"
+          - "Altium"
+          - "Eagle"
+          - "design review"
+          - "bring-up"
+          - "prototype"
+          - "pinout"
+
+      - name: "Build Systems & Toolchains"
+        max_points: 3
+        description: >
+          Make/CMake for embedded, Yocto/Buildroot for Linux images,
+          GCC arm-none-eabi, Clang, Keil, IAR, West (Zephyr).
+        keywords:
+          - "CMake"
+          - "Make"
+          - "Makefile"
+          - "Yocto"
+          - "Buildroot"
+          - "arm-none-eabi"
+          - "GCC"
+          - "Clang"
+          - "Keil"
+          - "IAR"
+          - "West"
+          - "cross-compilation"
+
+      - name: "Version Control"
+        max_points: 2
+        description: >
+          Git is non-negotiable. Branching strategies, submodules for HAL/SDK,
+          meaningful commit history. Monorepo for firmware+hardware co-versioning.
+        keywords:
+          - "Git"
+          - "git-flow"
+          - "trunk-based"
+          - "submodule"
+          - "version control"
+
+      - name: "Linux Kernel & Driver Development"
+        max_points: 5
+        description: >
+          Device tree, kernel modules, platform drivers, U-Boot, root filesystem,
+          cross-compilation. Major differentiator — rare + high-value.
+        keywords:
+          - "device tree"
+          - "kernel module"
+          - "Linux driver"
+          - "platform driver"
+          - "U-Boot"
+          - "root filesystem"
+          - "embedded Linux"
+          - "Yocto"
+          - "Buildroot"
+          - "dts"
+          - "dtb"
+
+      - name: "Bootloader Development"
+        max_points: 3
+        description: >
+          U-Boot customization, custom bootloaders, secure boot chain,
+          OTA update mechanisms, A/B partitions, firmware upgrade integrity.
+        keywords:
+          - "bootloader"
+          - "U-Boot"
+          - "secure boot"
+          - "OTA"
+          - "firmware update"
+          - "A/B partition"
+          - "FOTA"
+
+      - name: "Power Management"
+        max_points: 4
+        description: >
+          Sleep modes, wake-up sources, clock gating, DVFS, current profiling,
+          battery life estimation. Critical for IoT/wearables/medical.
+        keywords:
+          - "low power"
+          - "sleep mode"
+          - "deep sleep"
+          - "standby"
+          - "clock gating"
+          - "DVFS"
+          - "power profiling"
+          - "PPK2"
+          - "Joulescope"
+          - "battery"
+          - "energy harvesting"
+
+  - name: "Advanced & Differentiating Skills"
+    max_points: 15
+    description: "Skills that set exceptional candidates apart."
+    skills:
+      - name: "FPGA / HDL"
+        max_points: 2
+        description: >
+          Verilog, VHDL, HLS, Xilinx Vivado, Intel Quartus, SoC integration.
+        keywords:
+          - "FPGA"
+          - "Verilog"
+          - "VHDL"
+          - "Vivado"
+          - "Quartus"
+          - "HLS"
+          - "Zynq"
+          - "Cyclone"
+
+      - name: "Functional Safety"
+        max_points: 3
+        description: >
+          ISO 26262 (automotive), IEC 61508 (industrial), DO-178C (aerospace),
+          IEC 62304 (medical). V-model, FMEA, MISRA C, static analysis.
+          20-40% salary premium.
+        keywords:
+          - "ISO 26262"
+          - "IEC 61508"
+          - "DO-178C"
+          - "IEC 62304"
+          - "ASIL"
+          - "SIL"
+          - "DAL"
+          - "MISRA"
+          - "FMEA"
+          - "functional safety"
+          - "V-model"
+          - "Polyspace"
+          - "PC-lint"
+          - "Coverity"
+
+      - name: "Wireless Protocols"
+        max_points: 2
+        description: >
+          BLE, WiFi, Zigbee, Thread, Matter, LoRa, NB-IoT, LTE-M, UWB.
+        keywords:
+          - "BLE"
+          - "Bluetooth"
+          - "WiFi"
+          - "Zigbee"
+          - "Thread"
+          - "Matter"
+          - "LoRa"
+          - "LoRaWAN"
+          - "NB-IoT"
+          - "LTE-M"
+          - "UWB"
+          - "5G"
+
+      - name: "Embedded Security"
+        max_points: 3
+        description: >
+          Secure boot chain, hardware crypto, TrustZone, key management,
+          certificate auth, secure OTA, PSA Certified.
+        keywords:
+          - "secure boot"
+          - "TrustZone"
+          - "TEE"
+          - "crypto"
+          - "AES"
+          - "ECC"
+          - "HSM"
+          - "key management"
+          - "PSA"
+          - "security"
+
+      - name: "CI/CD for Embedded"
+        max_points: 2
+        description: >
+          HIL testing, automated flashing, CI runners with hardware targets,
+          SIL/MIL, static analysis in pipeline, firmware signing.
+        keywords:
+          - "HIL"
+          - "hardware-in-the-loop"
+          - "CI/CD"
+          - "automated testing"
+          - "OpenOCD"
+          - "firmware signing"
+          - "SIL"
+          - "MIL"
+
+      - name: "TinyML / Edge AI"
+        max_points: 2
+        description: >
+          TensorFlow Lite Micro, Edge Impulse, CMSIS-NN, model quantization,
+          on-device inference, anomaly detection.
+        keywords:
+          - "TinyML"
+          - "TensorFlow Lite"
+          - "Edge Impulse"
+          - "CMSIS-NN"
+          - "quantization"
+          - "edge AI"
+          - "NPU"
+          - "on-device"
+
+      - name: "Cloud & Connectivity"
+        max_points: 1
+        description: >
+          MQTT, AWS IoT Core, Azure IoT Hub, device provisioning, OTA frameworks.
+        keywords:
+          - "MQTT"
+          - "AWS IoT"
+          - "Azure IoT"
+          - "device provisioning"
+          - "IoT Hub"
+          - "shadow"
+          - "digital twin"
+
+  - name: "Experience & Professional Profile"
+    max_points: 20
+    description: "Domain experience, education, certifications, and career trajectory."
+    skills:
+      - name: "Industry Domain Experience"
+        max_points: 6
+        description: >
+          Automotive (+15-25% premium), aerospace/defense (+20-35%),
+          medical (+15-25%), IoT/consumer (baseline), industrial (+10-15%).
+          Domain match to target role is critical.
+        keywords:
+          - "automotive"
+          - "aerospace"
+          - "defense"
+          - "medical device"
+          - "IoT"
+          - "consumer electronics"
+          - "industrial"
+          - "telecom"
+          - "AUTOSAR"
+
+      - name: "Education"
+        max_points: 4
+        description: >
+          MS/PhD EE/CE = 4. BS EE/CE = 3. BS CS + embedded projects = 2.5.
+          Self-taught + strong portfolio = 1.5.
+        keywords:
+          - "electrical engineering"
+          - "computer engineering"
+          - "EE"
+          - "ECE"
+          - "BSEE"
+          - "MSEE"
+          - "PhD"
+          - "computer science"
+
+      - name: "Certifications"
+        max_points: 2
+        description: >
+          Tiebreakers, not dealmakers. TUV/Exida safety certs are highest value.
+          ARM AAE, Linux Foundation certs, ISTQB automotive are medium.
+        keywords:
+          - "TUV"
+          - "Exida"
+          - "ARM AAE"
+          - "ISTQB"
+          - "certified"
+          - "certification"
+
+      - name: "Experience Level Match"
+        max_points: 5
+        description: >
+          Junior (0-2yr): implements modules, knows C + 1 MCU.
+          Mid (2-5yr): owns features, RTOS, multiple protocols.
+          Senior (5-10yr): architects subsystems, leads bring-up.
+          Staff (10+yr): defines technical direction, cross-team.
+          Score based on match between claimed level and demonstrated depth.
+        keywords: []
+
+      - name: "Shipped Products & Impact"
+        max_points: 3
+        description: >
+          Evidence of products in production. Quantified outcomes like
+          'reduced boot time by 35%', 'shipped 2M units'. Strongest signal.
+        keywords:
+          - "shipped"
+          - "production"
+          - "deployed"
+          - "launched"
+          - "manufacturing"
+          - "mass production"
+
+red_flags:
+  - name: "No C language"
+    penalty: -15
+    description: "Disqualifying for most embedded roles"
+  - name: "Arduino-only experience"
+    penalty: -8
+    description: "Arduino hides registers, linker scripts, startup code"
+  - name: "Buzzword stuffing"
+    penalty: -5
+    description: "15+ technologies listed with no context or depth"
+  - name: "No debugging tools mentioned"
+    penalty: -5
+    description: "Cannot debug = cannot ship"
+  - name: "Only high-level languages"
+    penalty: -10
+    description: "Java/JS/Python only for an embedded role is a mismatch"
+  - name: "No hardware interaction"
+    penalty: -6
+    description: "Embedded without hardware awareness = app developer"
+  - name: "Claims expert in everything"
+    penalty: -4
+    description: "Nobody is expert in C, C++, Rust, VHDL, and TinyML simultaneously"
+  - name: "Excessive resume length"
+    penalty: -3
+    description: "9+ pages signals inability to synthesize"
+  - name: "No version control mention"
+    penalty: -3
+    description: "Git is a baseline expectation"
+  - name: "Experience-depth mismatch"
+    penalty: -5
+    description: "10 years but only knows one MCU and basic GPIO"
+  - name: "No shipped products"
+    penalty: -3
+    description: "Claims without production evidence"
+
+experience_tiers:
+  - level: "junior"
+    min_years: 0
+    max_years: 2
+    expected:
+      - "Implements well-defined modules"
+      - "Knows C and one MCU family"
+      - "Basic peripherals (GPIO, UART, SPI)"
+      - "Follows coding standards"
+      - "Portfolio or internship projects"
+
+  - level: "mid"
+    min_years: 2
+    max_years: 5
+    expected:
+      - "Owns features end-to-end"
+      - "Debugs complex HW/SW interactions"
+      - "Comfortable with RTOS and multiple protocols"
+      - "Reads schematics"
+      - "Mentors juniors"
+
+  - level: "senior"
+    min_years: 5
+    max_years: 10
+    expected:
+      - "Architects subsystems or full firmware stacks"
+      - "Technology selection decisions"
+      - "Leads platform bring-up"
+      - "Deep debugging (timing, race conditions, memory corruption)"
+      - "Drives coding standards and review"
+
+  - level: "staff"
+    min_years: 10
+    expected:
+      - "Defines technical direction across projects"
+      - "Cross-team influence"
+      - "Build-vs-buy decisions"
+      - "Safety/security architecture ownership"
+      - "Conference talks, patents, or OSS contributions"
+
+domain_variants:
+  automotive:
+    "Functional Safety": 5
+    "Hardware Interfaces": 6  # CAN/CAN-FD becomes must-have
+  medical:
+    "Functional Safety": 5
+    "Power Management": 6
+  aerospace:
+    "Functional Safety": 6
+    "Embedded Security": 5
+  iot:
+    "Wireless Protocols": 4
+    "Cloud & Connectivity": 3
+    "Power Management": 6
+  industrial:
+    "Hardware Interfaces": 6  # Fieldbus protocols

@@ -1,0 +1,55 @@
+PRIYA SHARMA
+Embedded Software Engineer
+priya.sharma@gmail.com | github.com/priyasharma-iot
+Bangalore, India
+
+ABOUT ME
+Embedded software engineer with 3.5 years of experience in IoT product development. Comfortable working across firmware, connectivity, and cloud integration. Shipped two consumer IoT products from prototype to production.
+
+WORK EXPERIENCE
+
+Embedded Software Engineer — Xiaomi India Technology, Bangalore
+Aug 2022 – Present
+- Developing firmware for smart home devices based on ESP32-S3 and ESP32-C3 (RISC-V)
+- Implemented BLE mesh networking for multi-device communication using ESP-IDF framework
+- Wrote WiFi provisioning and MQTT client for device-to-cloud communication with AWS IoT Core
+- Optimized deep sleep power management reducing average current from 45μA to 12μA, extending battery life from 8 to 14 months on CR2032
+- Developed OTA firmware update system with rollback support and integrity verification (SHA-256)
+- Integrated Edge Impulse anomaly detection model for predictive maintenance on vibration sensor data
+- Used FreeRTOS with 6 tasks, implemented proper mutex usage for shared I2C bus access
+- Debug workflow: ESP-IDF monitor, logic analyzer for SPI/I2C protocol validation
+
+Firmware Developer — Wipro Engineering (IoT Division), Bangalore
+Jan 2021 – Jul 2022
+- Developed sensor node firmware on STM32L476 (Cortex-M4) for industrial monitoring system
+- Implemented LoRaWAN Class A communication using Semtech SX1276 radio module
+- Wrote drivers for I2C temperature/humidity sensors (SHT40) and SPI accelerometer (ADXL345)
+- Built low-power state machine with configurable wake-up intervals and watchdog timer
+- Configured DMA for ADC sampling at 1kHz across 4 channels
+- Used STM32CubeIDE, ST-Link debugger, and Saleae logic analyzer for development and debug
+- Version control with Git, branching strategy for firmware releases
+
+Intern — Robert Bosch Engineering, Coimbatore
+Jun 2020 – Dec 2020
+- Assisted in CAN communication testing for automotive ECU validation
+- Wrote Python scripts for automated test log parsing and result generation
+- Learned basics of AUTOSAR architecture and ISO 26262 concepts
+
+EDUCATION
+B.Tech Electronics and Communication Engineering — VIT Vellore, 2020
+  CGPA: 8.7/10
+  Final year project: "LoRa-based Environmental Monitoring Network with Edge Computing"
+
+TECHNICAL SKILLS
+Languages: C (primary, 3.5yr), Python (scripting/testing, 2yr), some C++
+Microcontrollers: ESP32-S3, ESP32-C3, STM32L4, STM32F4, Arduino (hobby)
+RTOS: FreeRTOS
+Protocols: I2C, SPI, UART, BLE, WiFi, LoRaWAN, MQTT, CAN (basic)
+Tools: ST-Link, logic analyzer, oscilloscope (basic), ESP-IDF monitor
+Build: ESP-IDF (CMake), STM32CubeIDE, Make, PlatformIO
+Cloud: AWS IoT Core, MQTT, device shadows
+Other: Git, JIRA, basic PCB review (KiCad)
+
+PROJECTS
+- Smart Plant Monitor (personal): ESP32 + soil moisture + BLE app, sold 200 units on Tindie
+- Open-source contributor: ESP-IDF BLE mesh examples (3 merged PRs)

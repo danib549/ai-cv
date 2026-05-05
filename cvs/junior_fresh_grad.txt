@@ -1,0 +1,59 @@
+CARLOS MENDEZ
+Junior Embedded Engineer
+carlos.mendez.dev@outlook.com | github.com/carlosmendez
+Austin, TX
+
+OBJECTIVE
+Recent ECE graduate seeking an entry-level embedded systems position. Passionate about low-level programming and hardware-software integration. Completed multiple academic and personal embedded projects.
+
+EDUCATION
+B.S. Electrical and Computer Engineering — University of Texas at Austin, May 2025
+GPA: 3.6/4.0
+Relevant coursework: Embedded Systems Design, Microprocessor Architecture, Digital Signal Processing, Real-Time Operating Systems, Computer Architecture, Analog Electronics
+
+INTERNSHIP
+
+Firmware Engineering Intern — Texas Instruments, Dallas
+May 2024 – Aug 2024
+- Developed peripheral test firmware for MSP432P401R evaluation board in C
+- Implemented UART and SPI communication drivers for sensor interfacing
+- Wrote unit tests for GPIO and timer peripheral modules
+- Documented BSP API using Doxygen
+- Used Code Composer Studio IDE and XDS110 debug probe
+- Participated in weekly code reviews and learned Git branching workflow
+
+ACADEMIC PROJECTS
+
+Autonomous Line-Following Robot (Senior Capstone)
+- Designed and programmed robot using STM32F407 (Cortex-M4)
+- Wrote bare-metal C firmware: GPIO, PWM for motor control, ADC for IR sensors
+- Implemented PID control algorithm with 50Hz control loop
+- Configured NVIC interrupts for encoder feedback and timer-based scheduling
+- Designed custom PCB in KiCad (2-layer, SMD components)
+- Team of 4, I was responsible for all firmware and motor control
+
+RTOS Task Scheduler Lab
+- Built multi-tasking application on TM4C123 using FreeRTOS
+- Implemented producer-consumer pattern with message queues
+- Demonstrated priority inversion scenario and fixed with priority inheritance mutex
+- Measured task switching overhead using GPIO toggle + oscilloscope (12μs)
+
+Wireless Sensor Network (Course Project)
+- Programmed 5 Nordic nRF52840 nodes communicating via BLE
+- Implemented custom GATT service for temperature data aggregation
+- Used Segger J-Link for debugging, RTT for printf-style logging
+- Battery life optimization through BLE advertising interval tuning
+
+PERSONAL PROJECTS
+- ESP32 Weather Station: reads BME280 (I2C), displays on SSD1306 OLED (SPI), posts to ThingSpeak via WiFi
+- AVR LED Matrix: programmed ATmega328P in C with bit-banged SPI, custom animation engine
+- Contributed to open-source FreeRTOS documentation (2 PRs merged)
+
+SKILLS
+Languages: C (primary), Python (scripting), basic ARM Assembly (coursework)
+MCUs: STM32F4, TI MSP432, TI TM4C123, Nordic nRF52840, ESP32, ATmega328P (AVR)
+RTOS: FreeRTOS (coursework + projects)
+Protocols: UART, SPI, I2C, GPIO, PWM, BLE
+Tools: J-Link, ST-Link, XDS110, oscilloscope, KiCad
+Build: Make, STM32CubeIDE, Code Composer Studio, PlatformIO
+VCS: Git, GitHub

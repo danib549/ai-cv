@@ -1,0 +1,58 @@
+AHMED KHALIL
+Senior Embedded Systems Engineer
+ahmed.khalil@email.com | LinkedIn: /in/ahmedkhalil | GitHub: github.com/akhalil-embedded
+Munich, Germany
+
+SUMMARY
+Senior embedded systems engineer with 8 years of experience designing firmware for automotive and industrial applications. Deep expertise in ARM Cortex-M and Cortex-A platforms, RTOS-based systems, and Linux BSP development. Led the firmware architecture for three products shipped to mass production totaling 1.2M units. Functional safety certified (ISO 26262 ASIL-D).
+
+EXPERIENCE
+
+Lead Firmware Engineer — Bosch Automotive Electronics, Munich
+Jan 2021 – Present (5 years)
+- Architected the firmware stack for a next-gen ADAS sensor module running on NXP S32K3 (Cortex-M7), achieving ASIL-D certification under ISO 26262
+- Designed real-time CAN-FD and Ethernet (100BASE-T1) communication layers processing 2,000+ messages/sec with <500μs deterministic latency
+- Implemented bare-metal bootloader with secure boot chain (hardware AES-256, RSA-2048 signature verification) and A/B OTA firmware update mechanism
+- Reduced power consumption by 32% through DVFS optimization and selective clock gating, extending ECU sleep-mode battery life from 14 to 21 days
+- Led team of 4 firmware engineers; established MISRA C:2012 coding standard, integrated PC-lint and Polyspace static analysis into CI/CD pipeline
+- Built HIL test framework using Python + pytest + J-Link Commander, achieving 87% automated test coverage across 340 test cases
+- Migrated legacy FreeRTOS codebase to Zephyr RTOS, reducing task switching overhead by 18% and enabling better power management hooks
+
+Senior Embedded Software Engineer — Siemens Digital Industries, Erlangen
+Mar 2018 – Dec 2020 (2.8 years)
+- Developed Linux device drivers (I2C, SPI, GPIO) for custom industrial controller based on NXP i.MX8M (Cortex-A53)
+- Customized U-Boot bootloader and built production Yocto Linux images with OTA support via SWUpdate
+- Implemented Modbus TCP/RTU and EtherCAT protocol stacks for PLC communication
+- Designed interrupt-driven data acquisition system sampling 16 analog channels at 10kHz with DMA transfers
+- Wrote kernel modules for custom FPGA interface over PCIe, achieving 800MB/s sustained throughput
+- Debugged complex timing issues using Segger J-Link with SWV trace and Saleae logic analyzer
+
+Embedded Software Engineer — Continental AG, Regensburg
+Jun 2016 – Feb 2018 (1.8 years)
+- Developed AUTOSAR-compliant software components for body control module on Renesas RH850
+- Implemented CAN and LIN communication drivers per AUTOSAR COM stack
+- Wrote unit tests using Google Test framework, achieving 82% code coverage
+- Performed FMEA analysis and contributed to safety case documentation for ISO 26262 ASIL-B certification
+- Used Lauterbach TRACE32 debugger for complex race condition analysis in multi-core environment
+
+EDUCATION
+M.Sc. Electrical Engineering — Technical University of Munich, 2016
+  Thesis: "Real-Time Object Detection on ARM Cortex-A Using Hardware-Accelerated Neural Networks"
+B.Sc. Electrical and Computer Engineering — Cairo University, 2014
+
+SKILLS
+Languages: C (expert, 8yr), C++ (advanced, 5yr), Python (intermediate, 4yr), ARM Assembly (reading/debugging), Rust (learning, personal projects)
+MCUs/SoCs: STM32F4/F7/H7, NXP S32K3, NXP i.MX8M, Renesas RH850, ESP32-S3, Nordic nRF52840
+RTOS: FreeRTOS (expert), Zephyr (advanced), AUTOSAR OS (intermediate)
+Protocols: CAN/CAN-FD, LIN, Ethernet (TCP/IP, UDP), I2C, SPI, UART, USB (CDC/HID), Modbus, EtherCAT, PCIe
+Tools: JTAG/SWD, Segger J-Link, Lauterbach TRACE32, Saleae Logic, Oscilloscope (Rigol DS1054Z), GDB
+Build: CMake, Make, Yocto, West (Zephyr), arm-none-eabi-gcc, IAR Embedded Workbench
+Other: Git (git-flow), JIRA, Confluence, Jenkins CI, GitHub Actions, Docker
+
+CERTIFICATIONS
+- TÜV Süd Functional Safety Engineer (ISO 26262), 2022
+- ARM Accredited Engineer (AAE), 2020
+
+PUBLICATIONS & TALKS
+- "Migrating Automotive Firmware from FreeRTOS to Zephyr" — Embedded World Conference 2023
+- Co-author: "Secure OTA Update Mechanisms for Safety-Critical Automotive ECUs" — SAE International, 2022

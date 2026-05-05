@@ -1,0 +1,54 @@
+JASON TURNER
+Full Stack Developer
+jason.turner@protonmail.com | linkedin.com/in/jasonturner
+San Francisco, CA
+
+SUMMARY
+Experienced software developer with 6 years building web applications and cloud services. Looking to transition into embedded systems. Self-studying microcontroller programming in spare time.
+
+EXPERIENCE
+
+Senior Software Engineer — Stripe, San Francisco
+Mar 2022 – Present
+- Built payment processing microservices using Go, gRPC, and PostgreSQL
+- Designed REST APIs handling 50K requests/sec with p99 latency under 15ms
+- Implemented distributed tracing with OpenTelemetry and Datadog
+- Led migration from monolith to microservices architecture
+- Mentored 3 junior engineers
+
+Software Engineer — Shopify (Remote)
+Jan 2020 – Feb 2022
+- Developed Ruby on Rails backend for merchant dashboard
+- Built React frontend components with TypeScript
+- Managed CI/CD pipelines with GitHub Actions and Docker
+- Optimized database queries reducing page load by 40%
+
+Junior Developer — Local startup, San Francisco
+Jun 2018 – Dec 2019
+- Full stack web development with Node.js, Express, MongoDB
+- Built responsive UIs with React and Material UI
+- Deployed applications on AWS (EC2, S3, RDS)
+
+EDUCATION
+B.S. Computer Science — UC Berkeley, 2018
+GPA: 3.4/4.0
+
+SELF-STUDY (Embedded)
+- Completed "Making Embedded Systems" by Elecia White (book)
+- Arduino Uno projects: LED control, servo motor, basic sensor reading
+- Bought STM32 Nucleo board, followed a few YouTube tutorials
+- Installed STM32CubeIDE, blinked LED with HAL library
+- Reading "The Definitive Guide to ARM Cortex-M3 and Cortex-M4 Processors"
+
+SKILLS
+Languages: Go, Ruby, JavaScript, TypeScript, Python, SQL, HTML/CSS
+Frameworks: Rails, React, Express, gRPC, GraphQL
+Cloud: AWS (EC2, S3, RDS, Lambda), Docker, Kubernetes
+Databases: PostgreSQL, MongoDB, Redis
+Tools: Git, GitHub, CI/CD, Datadog, Terraform
+Embedded (learning): Arduino, basic STM32 (HAL), some C
+
+OTHER
+- Open source contributor to several Go projects
+- Blog about distributed systems architecture
+- Speak at local Go meetups

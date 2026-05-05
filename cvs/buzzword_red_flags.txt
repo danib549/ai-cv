@@ -1,0 +1,53 @@
+ALEX JOHNSON
+Embedded Systems Expert
+alexj@email.com
+New York, NY
+
+PROFESSIONAL SUMMARY
+Expert embedded systems engineer, IoT architect, AI/ML specialist, cloud solutions architect, and full-stack developer with 4 years of experience. Proficient in over 20 programming languages and frameworks. Passionate about cutting-edge technology and innovation. Seeking a challenging role where I can leverage my diverse expertise.
+
+EXPERIENCE
+
+IoT Developer — TechStartup Inc, New York
+Jun 2022 – Present (2 years)
+- Developed IoT solutions using various platforms
+- Worked with sensors and actuators for smart building project
+- Used Arduino and Raspberry Pi for prototyping
+- Connected devices to cloud using MQTT
+- Created dashboards with React and Node.js
+- Used Python for data analysis and machine learning
+- Managed project tasks in Jira
+
+Junior Developer — WebAgency LLC, New York
+Sep 2020 – May 2022 (1.7 years)
+- Built websites using WordPress and custom PHP
+- Developed mobile apps with React Native
+- Created REST APIs with Node.js
+- Database design with MySQL
+- Some Arduino hobby projects on the side
+
+EDUCATION
+B.S. Information Technology — NYU, 2020
+
+SKILLS
+Expert level: C, C++, Rust, Python, Java, JavaScript, TypeScript, Go, Ruby, Swift, Kotlin, Assembly, VHDL, Verilog, SystemVerilog, MATLAB, R, Scala, Perl, Lua
+Frameworks: React, Angular, Vue, Django, Flask, Spring Boot, .NET, Rails, Express, Next.js, TensorFlow, PyTorch, Keras
+Embedded: Arduino, Raspberry Pi, ESP8266, FreeRTOS, Zephyr, VxWorks, QNX, Linux Kernel, AUTOSAR, TinyML, Edge AI
+Protocols: I2C, SPI, UART, CAN, USB, Ethernet, BLE, WiFi, Zigbee, LoRa, 5G, NB-IoT, MQTT, HTTP, WebSocket, gRPC, GraphQL
+Cloud: AWS, Azure, GCP, Docker, Kubernetes, Terraform, Ansible, Jenkins
+Databases: PostgreSQL, MongoDB, Redis, Cassandra, DynamoDB, Neo4j, InfluxDB
+AI/ML: TensorFlow, PyTorch, Keras, Scikit-learn, OpenCV, YOLO, GPT, LangChain, RAG
+Security: OWASP, penetration testing, secure boot, TrustZone, HSM, PKI
+Safety: ISO 26262, IEC 61508, DO-178C, MISRA C, FMEA
+
+CERTIFICATIONS
+- AWS Solutions Architect Associate
+- Google Cloud Professional
+- Microsoft Azure Fundamentals
+- Certified Scrum Master
+- CompTIA Security+
+
+PROJECTS
+- Smart Home System (Arduino + Raspberry Pi + React dashboard)
+- Weather station with ESP8266
+- Personal blog built with Next.js
