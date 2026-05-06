@@ -8,11 +8,11 @@ description: >
 
 categories:
   - name: "Core Technical Skills"
-    max_points: 40
+    max_points: 43
     description: "Non-negotiable technical foundations. Absence at mid+ level is a major concern."
     skills:
       - name: "Programming Languages"
-        max_points: 15
+        max_points: 17
         description: >
           C is critical (score 0 if absent). C++ for larger projects.
           Assembly reading ability. Python for scripting/tooling. Rust as emerging bonus.
@@ -56,7 +56,7 @@ categories:
           - "i.MX"
 
       - name: "RTOS Knowledge"
-        max_points: 7
+        max_points: 8
         description: >
           FreeRTOS is must-know. Zephyr rapidly growing. ThreadX/VxWorks/QNX for
           enterprise/safety. Key concepts: task scheduling, mutexes, semaphores,
@@ -151,11 +151,11 @@ categories:
           - "timer"
 
   - name: "Secondary Technical Skills"
-    max_points: 25
+    max_points: 27
     description: "Important supporting skills that separate good from great engineers."
     skills:
       - name: "Debugging Tools & Methodology"
-        max_points: 5
+        max_points: 6
         description: >
           JTAG/SWD probes, logic analyzers, oscilloscopes, GDB remote,
           Segger J-Link, serial wire viewer, systematic methodology.
@@ -221,7 +221,7 @@ categories:
           - "version control"
 
       - name: "Linux Kernel & Driver Development"
-        max_points: 5
+        max_points: 6
         description: >
           Device tree, kernel modules, platform drivers, U-Boot, root filesystem,
           cross-compilation. Major differentiator — rare + high-value.
@@ -271,7 +271,7 @@ categories:
           - "energy harvesting"
 
   - name: "Advanced & Differentiating Skills"
-    max_points: 15
+    max_points: 16
     description: "Skills that set exceptional candidates apart."
     skills:
       - name: "FPGA / HDL"
@@ -329,7 +329,7 @@ categories:
           - "5G"
 
       - name: "Embedded Security"
-        max_points: 3
+        max_points: 4
         description: >
           Secure boot chain, hardware crypto, TrustZone, key management,
           certificate auth, secure OTA, PSA Certified.
@@ -389,11 +389,11 @@ categories:
           - "digital twin"
 
   - name: "Experience & Professional Profile"
-    max_points: 20
+    max_points: 14
     description: "Domain experience, education, certifications, and career trajectory."
     skills:
       - name: "Industry Domain Experience"
-        max_points: 6
+        max_points: 4
         description: >
           Automotive (+15-25% premium), aerospace/defense (+20-35%),
           medical (+15-25%), IoT/consumer (baseline), industrial (+10-15%).
@@ -410,7 +410,7 @@ categories:
           - "AUTOSAR"
 
       - name: "Education"
-        max_points: 4
+        max_points: 3
         description: >
           MS/PhD EE/CE = 4. BS EE/CE = 3. BS CS + embedded projects = 2.5.
           Self-taught + strong portfolio = 1.5.
@@ -425,7 +425,7 @@ categories:
           - "computer science"
 
       - name: "Certifications"
-        max_points: 2
+        max_points: 1
         description: >
           Tiebreakers, not dealmakers. TUV/Exida safety certs are highest value.
           ARM AAE, Linux Foundation certs, ISTQB automotive are medium.
@@ -438,7 +438,7 @@ categories:
           - "certification"
 
       - name: "Experience Level Match"
-        max_points: 5
+        max_points: 4
         description: >
           Junior (0-2yr): implements modules, knows C + 1 MCU.
           Mid (2-5yr): owns features, RTOS, multiple protocols.
@@ -448,7 +448,7 @@ categories:
         keywords: []
 
       - name: "Shipped Products & Impact"
-        max_points: 3
+        max_points: 2
         description: >
           Evidence of products in production. Quantified outcomes like
           'reduced boot time by 35%', 'shipped 2M units'. Strongest signal.
