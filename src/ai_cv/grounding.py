@@ -26,16 +26,22 @@ class SkillGrounding:
 
 
 def _word_pattern(keyword: str) -> re.Pattern[str]:
-    """Build a case-insensitive regex with word boundaries.
+    """Build a regex with word boundaries.
 
-    Special chars in keywords (./+-#) are escaped. Word boundaries are skipped
-    when the keyword starts/ends with a non-word char (e.g. "C++" or ".NET")
-    because Python's \\b would never match there.
+    Special chars (./+-#) are escaped. Word boundaries are skipped when the
+    keyword starts/ends with a non-word char (e.g. "C++" or ".NET") because
+    Python's \\b would never match there.
+
+    Case sensitivity rule: if the keyword has any lowercase letter we match
+    case-insensitively (so "Python" matches "python"); if it's all-caps /
+    digits / special chars we treat it as an acronym and match case-sensitively
+    (so "CAN" doesn't match the English word "can", "C" doesn't match "c").
     """
     esc = re.escape(keyword)
     left = r"(?<![A-Za-z0-9_])" if keyword[:1].isalnum() or keyword[:1] == "_" else ""
     right = r"(?![A-Za-z0-9_])" if keyword[-1:].isalnum() or keyword[-1:] == "_" else ""
-    return re.compile(f"{left}{esc}{right}", re.IGNORECASE)
+    flags = re.IGNORECASE if any(c.islower() for c in keyword) else 0
+    return re.compile(f"{left}{esc}{right}", flags)
 
 
 def ground_keywords(

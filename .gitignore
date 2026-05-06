@@ -33,3 +33,8 @@ Thumbs.db
 # Project output
 output/
 *.json.bak
+
+# Local agent / IDE state and ad-hoc diagnostics
+.claude/
+_diag.txt
+_*.txt

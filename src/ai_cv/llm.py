@@ -115,7 +115,28 @@ class LLMClient:
             resp = client.post(f"{self.base_url}/api/chat", json=payload)
             resp.raise_for_status()
         data = resp.json()
-        return data["message"]["content"]
+        return _strip_code_fence(data["message"]["content"])
+
+
+def _strip_code_fence(text: str) -> str:
+    """Strip a leading/trailing ```json … ``` wrapper if the model added one.
+
+    Some models (especially thinking / cloud variants) ignore ``format: json``
+    and wrap their reply in markdown fences. We unwrap defensively so the JSON
+    parser sees clean content.
+    """
+    s = text.strip()
+    if not s.startswith("```"):
+        return text
+    # Drop the opening fence (and optional language tag like ```json).
+    nl = s.find("\n")
+    if nl == -1:
+        return text
+    s = s[nl + 1 :]
+    # Drop the trailing fence if present.
+    if s.rstrip().endswith("```"):
+        s = s.rstrip()[:-3].rstrip()
+    return s
 
     def check_health(self) -> bool:
         """Check if the Ollama server is reachable."""
